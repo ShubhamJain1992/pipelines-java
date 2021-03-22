@@ -22,6 +22,6 @@ steps:
     goals: 'package'
 - task: PublishCodeCoverageResults@1
   inputs: 
-    codeCoverageTool: Cobertura # or JaCoCo
+    codeCoverageTool: 'JaCoCo'
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
